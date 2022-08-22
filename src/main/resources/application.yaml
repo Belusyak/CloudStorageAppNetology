@@ -1,0 +1,6 @@
+server:
+  port: 8080
+
+token:
+  expiration_date: 30
+  key: key123
