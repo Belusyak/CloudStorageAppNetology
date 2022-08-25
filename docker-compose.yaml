@@ -1,0 +1,11 @@
+version: "1"
+services:
+
+  db:
+    ports:
+      - 5432:5432
+    image: postgres:12
+    environment:
+      POSTGRES_DB: postgres
+      POSTGRES_USER: netology
+      POSTGRES_PASSWORD: 12345
