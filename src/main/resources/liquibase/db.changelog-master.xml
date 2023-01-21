@@ -4,5 +4,6 @@
                         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
 
     <include file="classpath:liquibase/db.changelog-1.0.xml"/>
+    <include file="classpath:liquibase/db.create-users.xml"/>
 
 </databaseChangeLog>

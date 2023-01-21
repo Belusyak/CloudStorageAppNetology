@@ -1,0 +1,19 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+    <changeSet id="1.0.1" author="belusyak">
+
+    <sql>
+        INSERT INTO public.t_user(
+            id, username, first_name, last_name, password)
+        VALUES (1, 'username1', 'name1','name1', '$2a$12$jh/CHGfiE7o5eQi9r5G9NOZFwW8OgbAHZ4NIuy/mmYPjYjz3xKlsS');<!--password: pass-->
+
+        INSERT INTO public.t_user(
+            id, username, first_name, last_name, password)
+        VALUES (2, 'username2', 'name2','name2', '$2a$12$KaeBNJk.CUZgiXmGV2Uu5uO94f1YMvCZnsz3gtuxBaWWFbmXGBRIK');<!--password: qwerty-->
+
+    </sql>
+
+    </changeSet>
+</databaseChangeLog>
